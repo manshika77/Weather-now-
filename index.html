@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeatherNow | Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="weather-card">
+      <div class="top">
+        <div>
+          <p class="eyebrow">WEATHER APP</p>
+          <h1>WeatherNow</h1>
+          <p class="subtitle">Check the weather anywhere.</p>
+        </div>
+        <div class="weather-icon" id="weatherIcon">☀️</div>
+      </div>
+
+      <form id="searchForm" class="search">
+        <input id="cityInput" type="text" placeholder="Enter city name..." autocomplete="off">
+        <button type="submit">Search</button>
+      </form>
+
+      <p id="message" class="message"></p>
+
+      <div id="weatherContent" class="weather-content">
+        <div class="location">
+          <span>📍</span>
+          <div>
+            <h2 id="city">New Delhi</h2>
+            <p id="condition">Clear Sky</p>
+          </div>
+        </div>
+
+        <div class="temperature">
+          <span id="temperature">28</span><sup>°C</sup>
+        </div>
+
+        <div class="details">
+          <div class="detail">
+            <span>💧</span>
+            <div><small>Humidity</small><strong id="humidity">45%</strong></div>
+          </div>
+          <div class="detail">
+            <span>💨</span>
+            <div><small>Wind</small><strong id="wind">12 km/h</strong></div>
+          </div>
+          <div class="detail">
+            <span>🌡️</span>
+            <div><small>Feels like</small><strong id="feelsLike">29°C</strong></div>
+          </div>
+        </div>
+
+        <p class="demo-note">Demo data is shown initially. Add your API key in <b>script.js</b> to use live weather data.</p>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
